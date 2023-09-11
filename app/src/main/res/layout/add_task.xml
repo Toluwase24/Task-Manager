@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/savetaskreminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="SAVE"
+        android:textColor="@color/blue_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="366dp"
+
+        android:layout_height="235dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#efefef"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099">
+
+
+        <EditText
+            android:id="@+id/inputTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@null"
+            android:hint="Task Title"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/navy_300"
+            android:textSize="@dimen/_15sdp" />
+
+        <EditText
+            android:id="@+id/inputTaskDescription"
+            android:layout_width="339dp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:background="@null"
+            android:hint="Task Description"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/navy_300"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <View
+            android:id="@+id/ViewTaskDescription"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/background_subtitle_indicator"
+            app:layout_constraintBottom_toBottomOf="@+id/inputTaskTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputTaskDescription" />
+
+        <TextView
+            android:id="@+id/dateview_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_82sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/date_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_85sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:src="@drawable/ic_baseline_calendar" />
+
+        <EditText
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_88sdp"
+            android:layout_marginEnd="@dimen/_1sdp" />
+
+
+        <TextView
+            android:id="@+id/timeview_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_133sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/time_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_137sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:src="@drawable/ic_time" />
+
+        <EditText
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_140sdp"
+            android:layout_marginEnd="@dimen/_1sdp" />
+
+        <View
+            android:id="@+id/ViewDate"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_85sdp"
+            android:background="@drawable/background_subtitle_indicator"
+            app:layout_constraintBottom_toBottomOf="@+id/inputTaskTitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/ViewTime"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_135sdp"
+            android:background="@drawable/background_subtitle_indicator"
+            app:layout_constraintBottom_toBottomOf="@+id/inputTaskTitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

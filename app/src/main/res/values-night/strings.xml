@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hi_welcome_back" />
+    <string name="find_your_resources" />
+    <string name="what_are_you_looking_for" />
+    <string name="course_title_ex_software_architecture" />
+    <string name="manage" />
+    <string name="swe_6653_n_software_architecture" />
+    <string name="add_a_course" />
+    <string name="type_note_here" />
+    <string name="channel_name">Task Reminders</string>
+    <string name="channel_description">Notification for task reminder has been set</string>
+    <item name="addcourse" type="id" />
+    <item name="button2" type="id" />
+    <item name="NoteSubTextTitle" type="id" />
+</resources>

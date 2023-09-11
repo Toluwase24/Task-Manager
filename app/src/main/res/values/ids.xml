@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="addAddNote" type="id" />
+    <item name="addImage" type="id" />
+    <item name="addFile" type="id" />
+</resources>
