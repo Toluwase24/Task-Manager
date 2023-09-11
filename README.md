@@ -1,4 +1,5 @@
-# Task-Managers students, we often struggle to stay organized and find the right resources to excel academically. This Android application aims to address these challenges by providing a platform that allows students to manage their studies more effectively. The key features of this application include:
+# Task-Managers students,
+ we often struggle to stay organized and find the right resources to excel academically. This Android application aims to address these challenges by providing a platform that allows students to manage their studies more effectively. The key features of this application include:
 
 User Authentication: Students can create accounts, log in, and sign up on the mobile application.
 
